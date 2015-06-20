@@ -1,0 +1,37 @@
+[user]
+	email = connorproctor@gmail.com
+	name = Connor Proctor
+[push]
+	default = simple
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	s = status
+	b = branch
+	l = log --pretty=format:'%C(yellow)%H %n%C(yellow)%ad%n%C(cyan)[%cn]%n%s  %n' --decorate --graph --date=short
+	new = log --oneline HEAD ^origin/master
+	type = cat-file -t
+	dump = cat-file -p
+
+[color]
+	ui = true
+
+[color "branch"]
+	current = yellow black
+	local = yellow
+	remote = magenta
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = green
+	whitespace = white reverse
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan reverse
+	branch = magenta
